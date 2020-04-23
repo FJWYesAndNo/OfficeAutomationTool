@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1086</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Excel">
+       <attribute name="title">
+        <string>Excel</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QToolBox" name="toolBox">
+          <property name="maximumSize">
+           <size>
+            <width>350</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <property name="tabSpacing">
+           <number>3</number>
+          </property>
+          <widget class="QWidget" name="ExcelMerge">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>350</width>
+             <height>466</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>多表合并</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="title">
+               <string>选择文件夹</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QPushButton" name="btn_MergeExcelList">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>文件路径</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditMergeExcelList">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="title">
+               <string>保存路径</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                 <item>
+                  <widget class="QPushButton" name="btn_SaveMergeExcel">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>文件路径</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_SaveMergeExcel">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_ExcelMerge">
+              <property name="text">
+               <string>合并</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="ExcelDuplication">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>350</width>
+             <height>466</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>消除重复</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="title">
+               <string>选择路径</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item>
+                  <widget class="QPushButton" name="btn_DuplicationExcel">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>文件路径</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditDuplicationExcel">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="title">
+               <string>保存路径</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QPushButton" name="btn_SaveDuplicationExcel">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>文件路径</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_SaveDuplicationExcel">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="title">
+               <string>按列消除</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_ExcelDuplicationCol">
+                   <property name="text">
+                    <string>列名</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_ExcelDuplicationCol">
+                   <property name="maximumSize">
+                    <size>
+                     <width>240</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_ExcelDuplication">
+              <property name="text">
+               <string>消除</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="ExcelRotate">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>350</width>
+             <height>466</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>自动旋转</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_42">
+            <item>
+             <widget class="QGroupBox" name="groupBox_22">
+              <property name="title">
+               <string>选择路径</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_39">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_27">
+                 <property name="spacing">
+                  <number>22</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="btn_ExcelRotateFile">
+                   <property name="maximumSize">
+                    <size>
+                     <width>60</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>打开</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_ExcelRotateFile">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_23">
+              <property name="title">
+               <string>保存路径</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_40">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_28">
+                 <property name="spacing">
+                  <number>22</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="btn_SaveExcelRotate">
+                   <property name="maximumSize">
+                    <size>
+                     <width>60</width>
+                     <height>25</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>打开</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_SaveExcelRotate">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_24">
+              <property name="title">
+               <string>选择工作簿</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_41">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_29">
+                 <item>
+                  <widget class="QLabel" name="label_ExcelRotatesheet">
+                   <property name="text">
+                    <string>工作簿名称</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_ExcelRotatesheet">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_ExcelRotate">
+              <property name="text">
+               <string>旋转</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_8">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_30">
+          <item>
+           <widget class="QTabWidget" name="tabWidget_2">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>状态</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QTextEdit" name="textEdit_ExcelStatus">
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Word">
+       <attribute name="title">
+        <string>Word</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
+        <item>
+         <widget class="QToolBox" name="toolBox_4">
+          <property name="maximumSize">
+           <size>
+            <width>320</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="WordModuleUse">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>196</width>
+             <height>287</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>模板套用</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_35">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_34">
+              <item>
+               <widget class="QGroupBox" name="groupBox_17">
+                <property name="title">
+                 <string>Word模板</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_31">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_22">
+                   <item>
+                    <widget class="QPushButton" name="btn_WordModule">
+                     <property name="text">
+                      <string>打开文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_WordModule"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_18">
+                <property name="title">
+                 <string>模板表格</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_32">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_23">
+                   <item>
+                    <widget class="QPushButton" name="btn_WordModuleExcel">
+                     <property name="text">
+                      <string>打开文件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_WordModuleExcel"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_19">
+                <property name="title">
+                 <string>保存路径</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_33">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_24">
+                   <item>
+                    <widget class="QPushButton" name="btn_SaveWordModule">
+                     <property name="text">
+                      <string>选择文件夹</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_SaveWordModule"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_WordModuleTransform">
+                <property name="text">
+                 <string>转换</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Word_PDF">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>320</width>
+             <height>484</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string> Word转PDF</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_38">
+            <item>
+             <widget class="QGroupBox" name="groupBox_20">
+              <property name="title">
+               <string>Word路径</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_37">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_25">
+                 <item>
+                  <widget class="QPushButton" name="btn_transWord">
+                   <property name="maximumSize">
+                    <size>
+                     <width>60</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>选择</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_transWord"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_21">
+              <property name="title">
+               <string>保存路径</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_36">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_26">
+                 <item>
+                  <widget class="QPushButton" name="btn_transPDF">
+                   <property name="maximumSize">
+                    <size>
+                     <width>60</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>选择</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_transPDF"/>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_WordtoPDF">
+              <property name="text">
+               <string>转换</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidget_5">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>状态</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_29">
+            <item>
+             <widget class="QTextEdit" name="textEdit_WordStatus">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="PDF">
+       <attribute name="title">
+        <string>PDF</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_20">
+        <item>
+         <widget class="QToolBox" name="toolBox_3">
+          <property name="maximumSize">
+           <size>
+            <width>325</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="PDFText">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>325</width>
+             <height>514</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>文字提取</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_28">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_27">
+              <item>
+               <widget class="QGroupBox" name="groupBox_16">
+                <property name="title">
+                 <string>属性</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_26">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_19">
+                   <item>
+                    <widget class="QPushButton" name="btn_PDFTextfile">
+                     <property name="maximumSize">
+                      <size>
+                       <width>50</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>打开</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_PDFTextfile"/>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_PDFTextpage">
+                     <property name="text">
+                      <string>页数</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QSpinBox" name="spinBox_PDFTextpage">
+                     <property name="maximumSize">
+                      <size>
+                       <width>60</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="minimum">
+                      <number>1</number>
+                     </property>
+                     <property name="maximum">
+                      <number>999999999</number>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_PDFTextgetpage">
+                <property name="text">
+                 <string>提取该页</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_PDFTextgetpages">
+                <property name="text">
+                 <string>全部提取</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_25">
+          <item>
+           <widget class="QTextEdit" name="textEdit_PDF">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_4">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>状态</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <widget class="QTextEdit" name="textEdit_PDFStatus"/>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Email">
+       <attribute name="title">
+        <string>邮件</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QToolBox" name="toolBox_2">
+          <property name="maximumSize">
+           <size>
+            <width>300</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="TextEmail">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>300</width>
+             <height>484</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>文本邮件</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_15">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <item>
+               <widget class="QGroupBox" name="groupBox_6">
+                <property name="maximumSize">
+                 <size>
+                  <width>290</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>服务器</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <property name="spacing">
+                    <number>7</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_TextEmailsmtpserver">
+                     <property name="maximumSize">
+                      <size>
+                       <width>46</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>服务器</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_TextEmailsmtpserver">
+                     <property name="minimumSize">
+                      <size>
+                       <width>170</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>smtp.aliyun.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.gmail.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.sina.com.cn</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.tom.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.163.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.126.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.qq.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.sohu.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.china.com</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_7">
+                <property name="maximumSize">
+                 <size>
+                  <width>290</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>发件人</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_11">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,0">
+                   <property name="spacing">
+                    <number>22</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_TextEmailsenderemail">
+                     <property name="text">
+                      <string>邮箱</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_TextEmailsenderemail"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="0,0">
+                   <item>
+                    <widget class="QLabel" name="label_TextEmailsenderpassword">
+                     <property name="text">
+                      <string>授权码</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_TextEmailsenderpassword"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_8">
+                <property name="maximumSize">
+                 <size>
+                  <width>290</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>收件人</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="0,0">
+                   <property name="spacing">
+                    <number>22</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_TextEmailreceiveremail">
+                     <property name="text">
+                      <string>邮箱</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_TextEmailreceiveremail"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_9">
+                <property name="maximumSize">
+                 <size>
+                  <width>290</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>属性</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <property name="spacing">
+                    <number>22</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_TextEmailtitle">
+                     <property name="text">
+                      <string>标题</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_TextEmailtitle"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_TextEmailclearcontent">
+                <property name="text">
+                 <string>清空内容</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_TextEmailSend">
+                <property name="text">
+                 <string>发送</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="FileEmail">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>272</width>
+             <height>476</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>附件邮件</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_24">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <widget class="QGroupBox" name="groupBox_11">
+                <property name="maximumSize">
+                 <size>
+                  <width>290</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>服务器</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_19">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_13">
+                   <property name="spacing">
+                    <number>7</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_FileEmailsmtpserver">
+                     <property name="maximumSize">
+                      <size>
+                       <width>46</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>服务器</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QComboBox" name="comboBox_FileEmailsmtpserver">
+                     <property name="minimumSize">
+                      <size>
+                       <width>170</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>smtp.aliyun.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.gmail.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.sina.com.cn</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.tom.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.163.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.126.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.qq.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.sohu.com</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>smtp.china.com</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_12">
+                <property name="maximumSize">
+                 <size>
+                  <width>290</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>发件人</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_20">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="0,0">
+                   <property name="spacing">
+                    <number>22</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_FileEmailsenderemail">
+                     <property name="text">
+                      <string>邮箱</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_FileEmailsenderemail"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="0,0">
+                   <item>
+                    <widget class="QLabel" name="label_FileEmailsenderpassword">
+                     <property name="text">
+                      <string>授权码</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_FileEmailsenderpassword"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_13">
+                <property name="maximumSize">
+                 <size>
+                  <width>290</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>收件人</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_21">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="0,0">
+                   <property name="spacing">
+                    <number>22</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_FileEmailreceiveremail">
+                     <property name="text">
+                      <string>邮箱</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_FileEmailreceiveremail"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_14">
+                <property name="maximumSize">
+                 <size>
+                  <width>290</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="title">
+                 <string>属性</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_22">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_17">
+                   <property name="spacing">
+                    <number>22</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_FileEmailtitle">
+                     <property name="text">
+                      <string>标题</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_FileEmailtitle"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_15">
+                <property name="title">
+                 <string>附件</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_23">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_18">
+                   <item>
+                    <widget class="QPushButton" name="btn_FindFileEmail">
+                     <property name="maximumSize">
+                      <size>
+                       <width>46</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>附件</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_FindFileEmail"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_FileEmailclearcontent">
+                <property name="text">
+                 <string>清空内容</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btn_FileEmailSend">
+                <property name="text">
+                 <string>发送</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <item>
+           <widget class="QGroupBox" name="groupBox_10">
+            <property name="title">
+             <string>编辑正文</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <widget class="QTextEdit" name="textEdit_emailContent"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_3">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>状态</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <item>
+               <widget class="QTextEdit" name="textEdit_emailstatus">
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
